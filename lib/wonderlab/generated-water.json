@@ -1,0 +1,932 @@
+{
+  "title": "The Water Cycle",
+  "subject": "geography",
+  "environment": "studio",
+  "summary": "Water evaporates from the ocean, rises and condenses into a cloud, falls as rain over land, then runs off back into the ocean. The arrows make it a continuous cycle rather than a one-way journey.",
+  "mode": "illustration",
+  "physics": "none",
+  "sourceReading": "The diagram is titled The water cycle. At upper left is a gold Sun circle. A curved teal arrow labelled Evaporation rises from a blue Ocean rectangle at lower left to a pale cloud at top centre labelled Condensation. A second curved teal arrow falls from the cloud past three small blue triangles labelled Rain onto a green triangular Land at lower right. A thick blue band runs from the land toward the ocean, with a straight left-pointing teal arrow beneath it labelled Runoff. No numerical values are shown.",
+  "assumptions": [
+    "Depth, thickness and 3D forms are inferred: the flat ocean rectangle and land triangle are shown as a water block and a raised mountain so the cycle can be viewed in space.",
+    "Arrow shafts are represented by curved tubes and cone heads; their exact curvature and position approximate the arrows in the diagram.",
+    "Small vapour spheres and three rain drops are illustrative additions that make the labelled evaporation and rain stages visible; they are not drawn as separate objects in the source.",
+    "Motion is illustrative, not a physical simulation of evaporation rates, rainfall, or runoff speed.",
+    "Sizes and positions are not to scale; the sun, cloud, ocean and land are compressed into one teaching scene."
+  ],
+  "nodes": [
+    {
+      "id": "sun",
+      "label": "Sun",
+      "explanation": "The gold circle in the upper left of the diagram. In the cycle it represents the Sun, the energy source associated with evaporation from the ocean.",
+      "shape": "sphere",
+      "surface": "star",
+      "profile": null,
+      "path": null,
+      "position": [
+        -3.6,
+        4.6,
+        -0.6
+      ],
+      "size": [
+        1.1,
+        1.1,
+        1.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#d9a441",
+      "opacity": 1,
+      "sourceBox": [
+        0.115,
+        0.135,
+        0.185,
+        0.305
+      ],
+      "motion": {
+        "type": "pulse",
+        "axis": "y",
+        "speed": 0.6,
+        "amplitude": 0.08,
+        "center": [
+          -3.6,
+          4.6,
+          -0.6
+        ]
+      }
+    },
+    {
+      "id": "cloud_main",
+      "label": "Cloud: Condensation",
+      "explanation": "The pale cloud at the top centre, labelled Condensation underneath. Water vapour cools and gathers here before falling as rain.",
+      "shape": "cloud",
+      "surface": "cloud",
+      "profile": null,
+      "path": null,
+      "position": [
+        0.3,
+        5.1,
+        0
+      ],
+      "size": [
+        3,
+        1.4,
+        1.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#c2d6d6",
+      "opacity": 0.95,
+      "sourceBox": [
+        0.345,
+        0.07,
+        0.665,
+        0.305
+      ],
+      "motion": {
+        "type": "pulse",
+        "axis": "y",
+        "speed": 0.4,
+        "amplitude": 0.05,
+        "center": [
+          0.3,
+          5.1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "ocean",
+      "label": "Ocean",
+      "explanation": "The blue rectangle labelled Ocean at lower left. It is the large water store from which evaporation rises and to which runoff returns.",
+      "shape": "box",
+      "surface": "water",
+      "profile": null,
+      "path": null,
+      "position": [
+        -3.2,
+        0.9,
+        0
+      ],
+      "size": [
+        3.2,
+        1.4,
+        2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#3d7ca8",
+      "opacity": 0.95,
+      "sourceBox": [
+        0.045,
+        0.645,
+        0.4,
+        0.88
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          -3.2,
+          0.9,
+          0
+        ]
+      }
+    },
+    {
+      "id": "land_base",
+      "label": "Land base",
+      "explanation": "The flat base beneath the green land triangle in the diagram, extended in depth so rain and runoff have a surface to cross.",
+      "shape": "box",
+      "surface": "enamel",
+      "profile": null,
+      "path": null,
+      "position": [
+        3,
+        0.55,
+        0
+      ],
+      "size": [
+        3.4,
+        0.9,
+        2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#8aa899",
+      "opacity": 1,
+      "sourceBox": [
+        0.575,
+        0.78,
+        0.935,
+        0.865
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          3,
+          0.55,
+          0
+        ]
+      }
+    },
+    {
+      "id": "mountain",
+      "label": "Land",
+      "explanation": "The green triangle labelled Land. Shown here as a mountain so rain falling on high ground can flow downhill toward the ocean.",
+      "shape": "cone",
+      "surface": "rock",
+      "profile": null,
+      "path": null,
+      "position": [
+        3.2,
+        1.95,
+        0
+      ],
+      "size": [
+        2.7,
+        2.3,
+        2.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#7fa08d",
+      "opacity": 1,
+      "sourceBox": [
+        0.575,
+        0.585,
+        0.935,
+        0.86
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          3.2,
+          1.95,
+          0
+        ]
+      }
+    },
+    {
+      "id": "river_runoff",
+      "label": "Runoff stream",
+      "explanation": "The thick blue band running from the land back toward the ocean in the diagram. It carries surface runoff across the front of the scene.",
+      "shape": "path",
+      "surface": "water",
+      "profile": null,
+      "path": [
+        [
+          -0.5,
+          -0.1,
+          0
+        ],
+        [
+          -0.25,
+          0.05,
+          0
+        ],
+        [
+          0,
+          0.1,
+          0
+        ],
+        [
+          0.25,
+          0.12,
+          0
+        ],
+        [
+          0.5,
+          0.05,
+          0
+        ]
+      ],
+      "position": [
+        0,
+        1.05,
+        1.25
+      ],
+      "size": [
+        5.2,
+        0.7,
+        0.35
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#3d7ca8",
+      "opacity": 0.95,
+      "sourceBox": [
+        0.395,
+        0.785,
+        0.735,
+        0.885
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          1.05,
+          1.25
+        ]
+      }
+    },
+    {
+      "id": "evap_arrow",
+      "label": "Evaporation arrow",
+      "explanation": "The curved teal arrow on the left, labelled Evaporation. It shows water vapour rising from the ocean toward the cloud.",
+      "shape": "path",
+      "surface": "enamel",
+      "profile": null,
+      "path": [
+        [
+          -0.35,
+          -0.5,
+          0
+        ],
+        [
+          -0.48,
+          -0.1,
+          0
+        ],
+        [
+          -0.35,
+          0.25,
+          0
+        ],
+        [
+          0.05,
+          0.45,
+          0
+        ],
+        [
+          0.42,
+          0.5,
+          0
+        ]
+      ],
+      "position": [
+        -2,
+        3.4,
+        0.85
+      ],
+      "size": [
+        1.9,
+        2.7,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#2f7f7a",
+      "opacity": 1,
+      "sourceBox": [
+        0.175,
+        0.26,
+        0.325,
+        0.635
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          -2,
+          3.4,
+          0.85
+        ]
+      }
+    },
+    {
+      "id": "evap_head",
+      "label": "Evaporation arrowhead",
+      "explanation": "The arrowhead at the top of the evaporation arrow, pointing up and right into the condensation cloud.",
+      "shape": "cone",
+      "surface": "enamel",
+      "profile": null,
+      "path": null,
+      "position": [
+        -1.25,
+        4.75,
+        0.85
+      ],
+      "size": [
+        0.32,
+        0.5,
+        0.32
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.9
+      ],
+      "color": "#2f7f7a",
+      "opacity": 1,
+      "sourceBox": [
+        0.275,
+        0.255,
+        0.325,
+        0.33
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          -1.25,
+          4.75,
+          0.85
+        ]
+      }
+    },
+    {
+      "id": "rain_arrow",
+      "label": "Rainfall arrow",
+      "explanation": "The curved teal arrow on the right of the cloud. It directs condensed water downward as rain onto the land.",
+      "shape": "path",
+      "surface": "enamel",
+      "profile": null,
+      "path": [
+        [
+          -0.42,
+          0.5,
+          0
+        ],
+        [
+          -0.05,
+          0.35,
+          0
+        ],
+        [
+          0.3,
+          0.05,
+          0
+        ],
+        [
+          0.45,
+          -0.3,
+          0
+        ],
+        [
+          0.42,
+          -0.5,
+          0
+        ]
+      ],
+      "position": [
+        2.15,
+        3.9,
+        0.85
+      ],
+      "size": [
+        1.5,
+        2.2,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#2f7f7a",
+      "opacity": 1,
+      "sourceBox": [
+        0.635,
+        0.285,
+        0.745,
+        0.55
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          2.15,
+          3.9,
+          0.85
+        ]
+      }
+    },
+    {
+      "id": "rain_head",
+      "label": "Rainfall arrowhead",
+      "explanation": "The arrowhead at the bottom of the rainfall arrow, pointing down toward the land and the Rain label.",
+      "shape": "cone",
+      "surface": "enamel",
+      "profile": null,
+      "path": null,
+      "position": [
+        2.8,
+        2.85,
+        0.85
+      ],
+      "size": [
+        0.32,
+        0.5,
+        0.32
+      ],
+      "rotation": [
+        0,
+        0,
+        3.1416
+      ],
+      "color": "#2f7f7a",
+      "opacity": 1,
+      "sourceBox": [
+        0.695,
+        0.485,
+        0.745,
+        0.555
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          2.8,
+          2.85,
+          0.85
+        ]
+      }
+    },
+    {
+      "id": "runoff_arrow",
+      "label": "Runoff arrow",
+      "explanation": "The straight teal arrow below the blue runoff band, labelled Runoff. Its leftward direction shows water returning to the ocean, closing the cycle.",
+      "shape": "path",
+      "surface": "enamel",
+      "profile": null,
+      "path": [
+        [
+          -0.5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.5,
+          0,
+          0
+        ]
+      ],
+      "position": [
+        0.1,
+        0.28,
+        1.25
+      ],
+      "size": [
+        2,
+        0.25,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#2f7f7a",
+      "opacity": 1,
+      "sourceBox": [
+        0.43,
+        0.885,
+        0.615,
+        0.935
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0.1,
+          0.28,
+          1.25
+        ]
+      }
+    },
+    {
+      "id": "runoff_head",
+      "label": "Runoff arrowhead",
+      "explanation": "The left-pointing head of the runoff arrow, aimed back at the ocean block.",
+      "shape": "cone",
+      "surface": "enamel",
+      "profile": null,
+      "path": null,
+      "position": [
+        -0.95,
+        0.28,
+        1.25
+      ],
+      "size": [
+        0.3,
+        0.45,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        1.5708
+      ],
+      "color": "#2f7f7a",
+      "opacity": 1,
+      "sourceBox": [
+        0.43,
+        0.885,
+        0.475,
+        0.935
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          -0.95,
+          0.28,
+          1.25
+        ]
+      }
+    },
+    {
+      "id": "vapour_1",
+      "label": "Vapour particle 1",
+      "explanation": "An illustrative vapour particle rising along the evaporation arrow from the ocean toward the cloud.",
+      "shape": "sphere",
+      "surface": "glass",
+      "profile": null,
+      "path": null,
+      "position": [
+        -2.35,
+        2.9,
+        0.4
+      ],
+      "size": [
+        0.28,
+        0.28,
+        0.28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#bcd9ea",
+      "opacity": 0.75,
+      "sourceBox": null,
+      "motion": {
+        "type": "oscillate",
+        "axis": "y",
+        "speed": 1.2,
+        "amplitude": 0.45,
+        "center": [
+          -2.35,
+          2.9,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "vapour_2",
+      "label": "Vapour particle 2",
+      "explanation": "A second illustrative vapour particle, offset in depth to show evaporation as a rising stream rather than a single drop.",
+      "shape": "sphere",
+      "surface": "glass",
+      "profile": null,
+      "path": null,
+      "position": [
+        -2.05,
+        3.5,
+        -0.2
+      ],
+      "size": [
+        0.22,
+        0.22,
+        0.22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#bcd9ea",
+      "opacity": 0.65,
+      "sourceBox": null,
+      "motion": {
+        "type": "oscillate",
+        "axis": "y",
+        "speed": 1,
+        "amplitude": 0.4,
+        "center": [
+          -2.05,
+          3.5,
+          -0.2
+        ]
+      }
+    },
+    {
+      "id": "rain_drop_1",
+      "label": "Rain drop 1",
+      "explanation": "One of the small blue triangles falling from the cloud in the diagram, labelled Rain. Shown as a downward-pointing drop above the land.",
+      "shape": "cone",
+      "surface": "water",
+      "profile": null,
+      "path": null,
+      "position": [
+        2.35,
+        3.45,
+        0.3
+      ],
+      "size": [
+        0.3,
+        0.45,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        3.1416
+      ],
+      "color": "#4a86b8",
+      "opacity": 1,
+      "sourceBox": [
+        0.64,
+        0.375,
+        0.665,
+        0.435
+      ],
+      "motion": {
+        "type": "oscillate",
+        "axis": "y",
+        "speed": 2,
+        "amplitude": 0.35,
+        "center": [
+          2.35,
+          3.45,
+          0.3
+        ]
+      }
+    },
+    {
+      "id": "rain_drop_2",
+      "label": "Rain drop 2",
+      "explanation": "A second blue rain mark from the diagram, falling to the right of the first drop.",
+      "shape": "cone",
+      "surface": "water",
+      "profile": null,
+      "path": null,
+      "position": [
+        2.95,
+        3.15,
+        -0.2
+      ],
+      "size": [
+        0.3,
+        0.45,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        3.1416
+      ],
+      "color": "#4a86b8",
+      "opacity": 1,
+      "sourceBox": [
+        0.755,
+        0.415,
+        0.78,
+        0.475
+      ],
+      "motion": {
+        "type": "oscillate",
+        "axis": "y",
+        "speed": 1.7,
+        "amplitude": 0.3,
+        "center": [
+          2.95,
+          3.15,
+          -0.2
+        ]
+      }
+    },
+    {
+      "id": "rain_drop_3",
+      "label": "Rain drop 3",
+      "explanation": "The lowest blue rain mark in the diagram, closest to the Rain label and the top of the land.",
+      "shape": "cone",
+      "surface": "water",
+      "profile": null,
+      "path": null,
+      "position": [
+        2.6,
+        2.95,
+        0.55
+      ],
+      "size": [
+        0.3,
+        0.45,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        3.1416
+      ],
+      "color": "#4a86b8",
+      "opacity": 1,
+      "sourceBox": [
+        0.695,
+        0.485,
+        0.72,
+        0.545
+      ],
+      "motion": {
+        "type": "oscillate",
+        "axis": "y",
+        "speed": 2.3,
+        "amplitude": 0.3,
+        "center": [
+          2.6,
+          2.95,
+          0.55
+        ]
+      }
+    }
+  ],
+  "links": [
+    {
+      "from": "ocean",
+      "to": "vapour_1",
+      "style": "flow",
+      "color": "#2f7f7a",
+      "label": "Evaporation"
+    },
+    {
+      "from": "vapour_1",
+      "to": "cloud_main",
+      "style": "flow",
+      "color": "#2f7f7a",
+      "label": "Rises and cools"
+    },
+    {
+      "from": "cloud_main",
+      "to": "rain_drop_1",
+      "style": "flow",
+      "color": "#3d7ca8",
+      "label": "Rain"
+    },
+    {
+      "from": "rain_drop_1",
+      "to": "mountain",
+      "style": "flow",
+      "color": "#3d7ca8",
+      "label": "Falls on land"
+    },
+    {
+      "from": "mountain",
+      "to": "river_runoff",
+      "style": "flow",
+      "color": "#3d7ca8",
+      "label": "Runoff"
+    },
+    {
+      "from": "river_runoff",
+      "to": "ocean",
+      "style": "flow",
+      "color": "#3d7ca8",
+      "label": "Returns to ocean"
+    }
+  ],
+  "controls": [
+    {
+      "id": "rain_drop_1_speed",
+      "label": "Rain drop 1 speed",
+      "unit": "rad/s",
+      "target": "rain_drop_1",
+      "property": "speed",
+      "min": 0,
+      "max": 4,
+      "value": 2,
+      "step": 0.1,
+      "explanation": "Changes only the oscillation speed of Rain drop 1; the other drops and the cycle stages do not change."
+    },
+    {
+      "id": "vapour_1_speed",
+      "label": "Vapour particle 1 speed",
+      "unit": "rad/s",
+      "target": "vapour_1",
+      "property": "speed",
+      "min": 0,
+      "max": 4,
+      "value": 1.2,
+      "step": 0.1,
+      "explanation": "Changes only the oscillation speed of Vapour particle 1 rising from the ocean; it does not calculate a real evaporation rate."
+    },
+    {
+      "id": "sun_scale",
+      "label": "Sun scale",
+      "unit": "x",
+      "target": "sun",
+      "property": "scale",
+      "min": 0.6,
+      "max": 1.6,
+      "value": 1,
+      "step": 0.05,
+      "explanation": "Changes only the displayed size of the Sun sphere; it does not change heating or evaporation in the model."
+    },
+    {
+      "id": "cloud_opacity",
+      "label": "Cloud opacity",
+      "unit": "",
+      "target": "cloud_main",
+      "property": "opacity",
+      "min": 0.12,
+      "max": 1,
+      "value": 0.95,
+      "step": 0.05,
+      "explanation": "Changes only how opaque the main cloud appears, helping reveal the vapour-to-cloud stage behind it."
+    }
+  ],
+  "questions": [
+    "Where does evaporation start, and where does the vapour go?",
+    "What happens to water vapour inside the cloud?",
+    "How does rain on the land get back to the ocean?"
+  ]
+}

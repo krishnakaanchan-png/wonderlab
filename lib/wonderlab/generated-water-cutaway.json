@@ -1,0 +1,723 @@
+{
+  "title": "The Water Cycle: A Landscape Cutaway",
+  "subject": "Water cycle through ocean, air, land, and runoff",
+  "summary": "A beautiful connected landscape cutaway follows one continuous journey: sunlight evaporates ocean water, vapor condenses into a cloud, rain falls on mountainous land, and streams plus groundwater carry water back to the ocean. The stages move as one coordinated loop with clear cause and effect, using natural terrain and a visible underground section instead of disconnected diagram shapes.",
+  "mode": "illustration",
+  "physics": "none",
+  "sourceReading": "Visible evidence only: the source is a simple labeled diagram titled The water cycle. A gold sun sits above a blue Ocean block at lower left; a teal curved arrow labeled Evaporation rises from the ocean to a pale cloud labeled Condensation. Small blue rain marks fall toward a green triangular Land form at lower right, and a blue band plus a left-pointing arrow labeled Runoff return water toward the ocean. The relations are ocean-to-air-to-cloud-to-land-to-ocean. No scale, measurements, groundwater section, vegetation, or material properties are visibly established.",
+  "assumptions": [
+    "This is a slowed illustrative teaching loop, not a numerically accurate simulation of evaporation rates, rainfall, or groundwater travel time.",
+    "The underground cutaway expands the source's Runoff idea to show soil infiltration and groundwater returning toward the ocean; this subsurface route should be checked against the intended lesson level.",
+    "The sun, ocean, cloud, mountain, distances, and water volumes are not to scale.",
+    "Generated artwork may need checking for physical continuity of the shoreline, stream, groundwater path, rain area, and cloud before labels are added.",
+    "Sun, ocean, cloud, mountain, distances and water volumes are illustrative and not to scale.",
+    "Real groundwater moves far more slowly than surface runoff, although both returns are shown in the same teaching phase.",
+    "Water vapor is invisible; the visible wisps in this artwork are an explanatory convention.",
+    "This generated landscape and its flow paths are illustrative, not a weather or groundwater simulation."
+  ],
+  "nodes": [
+    {
+      "id": "sun",
+      "label": "Sun",
+      "explanation": "Heat source at upper left whose energy drives evaporation from the ocean.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#ee806d",
+      "opacity": 1,
+      "sourceBox": [
+        0.115,
+        0.165,
+        0.205,
+        0.295
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "ocean",
+      "label": "Ocean",
+      "explanation": "Large water reservoir at lower left; its surface supplies vapor and later receives returning runoff.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#65b9ec",
+      "opacity": 1,
+      "sourceBox": [
+        0.055,
+        0.685,
+        0.41,
+        0.875
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "evaporation",
+      "label": "Evaporation",
+      "explanation": "Curved rising pathway from ocean toward cloud, representing water vapor moving upward as it evaporates.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#65b9ec",
+      "opacity": 1,
+      "sourceBox": [
+        0.18,
+        0.27,
+        0.335,
+        0.635
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "condensation_cloud",
+      "label": "Condensation cloud",
+      "explanation": "Cloud overhead where cooling vapor gathers and condenses into droplets.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#65b9ec",
+      "opacity": 1,
+      "sourceBox": [
+        0.36,
+        0.085,
+        0.635,
+        0.325
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "rain",
+      "label": "Rain",
+      "explanation": "Droplets falling from the cloud side toward the land when they become heavy enough.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#65b9ec",
+      "opacity": 1,
+      "sourceBox": [
+        0.66,
+        0.39,
+        0.785,
+        0.55
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "land",
+      "label": "Land",
+      "explanation": "Raised land and mountain on the right that receive rain and direct water downhill.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#65b9ec",
+      "opacity": 1,
+      "sourceBox": [
+        0.58,
+        0.605,
+        0.93,
+        0.86
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "runoff",
+      "label": "Runoff",
+      "explanation": "Returning surface and subsurface water route from land back to the ocean, completing the cycle.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#65b9ec",
+      "opacity": 1,
+      "sourceBox": [
+        0.405,
+        0.795,
+        0.72,
+        0.945
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "links": [],
+  "controls": [
+    {
+      "id": "animation_pace",
+      "label": "Explanation pace",
+      "unit": "\u00d7",
+      "target": "sun",
+      "property": "speed",
+      "min": 0.5,
+      "max": 2,
+      "value": 1,
+      "step": 0.1,
+      "explanation": "Speeds up or slows down the whole teaching sequence. It does not simulate a physiological rate or physical outcome."
+    }
+  ],
+  "questions": [
+    "What powers the water cycle?",
+    "Why do clouds form?",
+    "How does groundwater reach the ocean?"
+  ],
+  "cutaway": {
+    "regions": [
+      {
+        "id": "sun",
+        "label": "Sun",
+        "center": [
+          0.184,
+          0.21
+        ],
+        "radius": [
+          0.034,
+          0.04
+        ],
+        "labelSide": "left",
+        "color": "#ee806d"
+      },
+      {
+        "id": "ocean",
+        "label": "Ocean",
+        "center": [
+          0.205,
+          0.745
+        ],
+        "radius": [
+          0.155,
+          0.135
+        ],
+        "labelSide": "left",
+        "color": "#65b9ec"
+      },
+      {
+        "id": "evaporation",
+        "label": "Evaporation",
+        "center": [
+          0.335,
+          0.425
+        ],
+        "radius": [
+          0.145,
+          0.185
+        ],
+        "labelSide": "left",
+        "color": "#65b9ec"
+      },
+      {
+        "id": "condensation_cloud",
+        "label": "Condensation cloud",
+        "center": [
+          0.565,
+          0.168
+        ],
+        "radius": [
+          0.205,
+          0.085
+        ],
+        "labelSide": "left",
+        "color": "#65b9ec"
+      },
+      {
+        "id": "rain",
+        "label": "Rain",
+        "center": [
+          0.715,
+          0.315
+        ],
+        "radius": [
+          0.16,
+          0.115
+        ],
+        "labelSide": "right",
+        "color": "#65b9ec"
+      },
+      {
+        "id": "land",
+        "label": "Land",
+        "center": [
+          0.725,
+          0.49
+        ],
+        "radius": [
+          0.215,
+          0.19
+        ],
+        "labelSide": "right",
+        "color": "#65b9ec"
+      },
+      {
+        "id": "runoff",
+        "label": "Runoff",
+        "center": [
+          0.625,
+          0.835
+        ],
+        "radius": [
+          0.285,
+          0.095
+        ],
+        "labelSide": "left",
+        "color": "#65b9ec"
+      }
+    ],
+    "flows": [
+      {
+        "id": "evaporation_route",
+        "label": "Evaporation flow",
+        "points": [
+          [
+            0.18,
+            0.602
+          ],
+          [
+            0.252,
+            0.538
+          ],
+          [
+            0.319,
+            0.454
+          ],
+          [
+            0.393,
+            0.382
+          ],
+          [
+            0.463,
+            0.309
+          ],
+          [
+            0.499,
+            0.239
+          ]
+        ],
+        "color": "#65b9ec"
+      },
+      {
+        "id": "precipitation_route",
+        "label": "Rainfall flow",
+        "points": [
+          [
+            0.655,
+            0.235
+          ],
+          [
+            0.679,
+            0.301
+          ],
+          [
+            0.702,
+            0.365
+          ],
+          [
+            0.726,
+            0.423
+          ],
+          [
+            0.751,
+            0.474
+          ]
+        ],
+        "color": "#65b9ec"
+      },
+      {
+        "id": "surface_runoff_route",
+        "label": "Surface runoff flow",
+        "points": [
+          [
+            0.803,
+            0.493
+          ],
+          [
+            0.768,
+            0.535
+          ],
+          [
+            0.73,
+            0.574
+          ],
+          [
+            0.698,
+            0.609
+          ],
+          [
+            0.653,
+            0.641
+          ],
+          [
+            0.613,
+            0.677
+          ],
+          [
+            0.565,
+            0.709
+          ],
+          [
+            0.521,
+            0.739
+          ],
+          [
+            0.472,
+            0.751
+          ]
+        ],
+        "color": "#65b9ec"
+      },
+      {
+        "id": "groundwater_route",
+        "label": "Groundwater return flow",
+        "points": [
+          [
+            0.889,
+            0.854
+          ],
+          [
+            0.797,
+            0.864
+          ],
+          [
+            0.704,
+            0.852
+          ],
+          [
+            0.61,
+            0.839
+          ],
+          [
+            0.516,
+            0.847
+          ],
+          [
+            0.43,
+            0.878
+          ],
+          [
+            0.354,
+            0.902
+          ],
+          [
+            0.289,
+            0.886
+          ]
+        ],
+        "color": "#65b9ec"
+      }
+    ],
+    "phases": [
+      {
+        "id": "evaporation_phase",
+        "title": "Evaporation: Sunlight Lifts Ocean Water",
+        "explanation": "Golden sunlight warms the ocean surface at lower left. Water gains energy and rises as pale vapor wisps, beginning the journey from ocean to sky.",
+        "duration": 0.9,
+        "highlights": [
+          "sun",
+          "ocean",
+          "evaporation"
+        ],
+        "flows": [
+          "evaporation_route"
+        ],
+        "contractions": [],
+        "movingParts": [
+          "ocean",
+          "evaporation",
+          "condensation_cloud",
+          "rain",
+          "runoff"
+        ]
+      },
+      {
+        "id": "condensation_phase",
+        "title": "Condensation: Vapor Gathers in the Cloud",
+        "explanation": "The rising vapor reaches cooler air overhead and gathers in the large cloud. Tiny liquid droplets form together, making the cloud appear fuller and heavier.",
+        "duration": 0.8,
+        "highlights": [
+          "evaporation",
+          "condensation_cloud"
+        ],
+        "flows": [
+          "evaporation_route"
+        ],
+        "contractions": [
+          {
+            "regionId": "condensation_cloud",
+            "strength": 0.01
+          }
+        ],
+        "movingParts": [
+          "ocean",
+          "evaporation",
+          "condensation_cloud",
+          "rain",
+          "runoff"
+        ]
+      },
+      {
+        "id": "precipitation_phase",
+        "title": "Precipitation: Rain Falls on the Land",
+        "explanation": "Droplets merge and become heavy enough to fall. Coordinated rain crosses the mountain slopes, vegetation, soil and stream at the same time.",
+        "duration": 0.9,
+        "highlights": [
+          "condensation_cloud",
+          "rain",
+          "land"
+        ],
+        "flows": [
+          "precipitation_route"
+        ],
+        "contractions": [
+          {
+            "regionId": "condensation_cloud",
+            "strength": -0.01
+          }
+        ],
+        "movingParts": [
+          "ocean",
+          "evaporation",
+          "condensation_cloud",
+          "rain",
+          "runoff"
+        ]
+      },
+      {
+        "id": "runoff_phase",
+        "title": "Runoff and Groundwater Return to the Ocean",
+        "explanation": "Surface water joins the winding mountain stream and flows downhill to the shore. Some rain also soaks into the soil and follows the blue groundwater channel through fractured rock toward the ocean.",
+        "duration": 1.1,
+        "highlights": [
+          "land",
+          "runoff",
+          "ocean"
+        ],
+        "flows": [
+          "surface_runoff_route",
+          "groundwater_route"
+        ],
+        "contractions": [],
+        "movingParts": [
+          "ocean",
+          "evaporation",
+          "condensation_cloud",
+          "rain",
+          "runoff"
+        ]
+      },
+      {
+        "id": "renewal_phase",
+        "title": "Renewal: The Cycle Begins Again",
+        "explanation": "Returning stream water and groundwater rejoin the ocean reservoir. As sunlight warms the surface again, new vapor begins to rise and the connected cycle repeats.",
+        "duration": 0.8,
+        "highlights": [
+          "ocean",
+          "sun",
+          "evaporation"
+        ],
+        "flows": [
+          "groundwater_route",
+          "evaporation_route"
+        ],
+        "contractions": [
+          {
+            "regionId": "ocean",
+            "strength": 0.01
+          }
+        ],
+        "movingParts": [
+          "ocean",
+          "evaporation",
+          "condensation_cloud",
+          "rain",
+          "runoff"
+        ]
+      }
+    ],
+    "limitations": [
+      "Sun, ocean, cloud, mountain, distances and water volumes are illustrative and not to scale.",
+      "Real groundwater moves far more slowly than surface runoff, although both returns are shown in the same teaching phase.",
+      "The translucent evaporation wisps make vapor visible for teaching; real water vapor is invisible until droplets condense.",
+      "Rainfall is concentrated over the mountain in this artwork and does not represent a complete precipitation pattern.",
+      "Flow paths follow the visible stream, vapor wisps and underground blue channel approximately; exact underground continuity is stylized."
+    ],
+    "image": "/illustrations/water-cutaway.webp",
+    "provenance": "muse-image-1.0",
+    "poses": [
+      {
+        "phaseId": "evaporation_phase",
+        "image": "/illustrations/water-cutaway.webp"
+      },
+      {
+        "phaseId": "condensation_phase",
+        "image": "/illustrations/water-pose-1.webp"
+      },
+      {
+        "phaseId": "precipitation_phase",
+        "image": "/illustrations/water-pose-2.webp"
+      },
+      {
+        "phaseId": "runoff_phase",
+        "image": "/illustrations/water-pose-3.webp"
+      },
+      {
+        "phaseId": "renewal_phase",
+        "image": "/illustrations/water-pose-4.webp"
+      }
+    ]
+  }
+}

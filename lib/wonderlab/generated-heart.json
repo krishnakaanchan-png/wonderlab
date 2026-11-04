@@ -1,0 +1,902 @@
+{
+  "title": "How the Heart Pumps: A Coordinated Cycle",
+  "subject": "Human heart frontal cutaway",
+  "summary": "A coordinated four-chamber heart cutaway showing how blood returns from the body to the right atrium and right ventricle, is pumped through the pulmonary artery to the lungs, returns oxygenated through the pulmonary veins to the left atrium and left ventricle, and is ejected through the aorta back to the body. The animation treats the heart as one joined pump: both atria contract together and both ventricles contract together in slowed teaching stages.",
+  "mode": "illustration",
+  "physics": "none",
+  "sourceReading": "This is a saved animation generated with Muse Wonder and Muse Image from a user-provided heart diagram. The original reference is not distributed. The left panel shows the generated artwork.",
+  "assumptions": [
+    "This is a slowed teaching animation, not exact clinical timing, valve motion timing or a numerical simulation of pressures and volumes.",
+    "Blue and red are conventional diagram colours for oxygen-poor and oxygen-rich blood, not direct measurements from the reference image.",
+    "Valve leaflets and the routes through the lungs and body are simplified for clarity; the lungs and full body circuit are implied by vessel direction rather than drawn as separate organs.",
+    "Patient orientation is preserved as patient's right on viewer's left, and the generated artwork should be checked against the reference for chamber position, vessel connections and valve placement before use.",
+    "This is a slowed teaching cycle, not clinical timing, pressure, volume, or valve-motion measurement; one phase is not one complete heartbeat.",
+    "The finished cutaway partly hides the aortic outlet behind the pulmonary trunk and the inferior vena cava behind the right ventricle, so those short connecting segments are mapped less confidently than the visible chambers.",
+    "The artwork is AI-generated; anatomical detail has not been reviewed by a medical illustrator.",
+    "The illustrated tissue changes pose using generated keyframes and motion interpolation. This is not a biomechanical model."
+  ],
+  "nodes": [
+    {
+      "id": "right_atrium",
+      "label": "Right atrium",
+      "explanation": "Upper chamber on patient's right, viewer's left, receiving blood from both venae cavae and passing it through the tricuspid valve to the right ventricle.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#65b9ec",
+      "opacity": 1,
+      "sourceBox": [
+        0.318,
+        0.4,
+        0.454,
+        0.636
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "right_ventricle",
+      "label": "Right ventricle",
+      "explanation": "Lower chamber on patient's right, viewer's left, receiving blood from the right atrium and ejecting it into the pulmonary artery.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#65b9ec",
+      "opacity": 1,
+      "sourceBox": [
+        0.34,
+        0.63,
+        0.55,
+        0.84
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "left_atrium",
+      "label": "Left atrium",
+      "explanation": "Upper chamber on patient's left, viewer's right, receiving oxygenated blood from the pulmonary veins and passing it through the mitral valve to the left ventricle.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#ee806d",
+      "opacity": 1,
+      "sourceBox": [
+        0.532,
+        0.38,
+        0.6639999999999999,
+        0.544
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "left_ventricle",
+      "label": "Left ventricle",
+      "explanation": "Lower chamber on patient's left, viewer's right, with the thickest muscular wall, ejecting oxygenated blood into the aorta.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#ee806d",
+      "opacity": 1,
+      "sourceBox": [
+        0.528,
+        0.5499999999999999,
+        0.692,
+        0.83
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "heart_valves",
+      "label": "Heart valves",
+      "explanation": "The tricuspid and mitral valves separate atria from ventricles, while the pulmonary and aortic outlet valves prevent backflow during ejection and relaxation.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#ee806d",
+      "opacity": 1,
+      "sourceBox": [
+        0.39,
+        0.5349999999999999,
+        0.62,
+        0.665
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "aorta",
+      "label": "Aorta",
+      "explanation": "Large arched vessel leaving the left ventricle, carrying oxygenated blood upward to branches for the upper body and downward toward the lower body.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#ee806d",
+      "opacity": 1,
+      "sourceBox": [
+        0.42400000000000004,
+        0.11,
+        0.6,
+        0.34
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "pulmonary_artery",
+      "label": "Pulmonary artery",
+      "explanation": "Vessel leaving the right ventricle and dividing toward the right and left lungs, carrying deoxygenated blood for gas exchange.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#65b9ec",
+      "opacity": 1,
+      "sourceBox": [
+        0.47,
+        0.27,
+        0.74,
+        0.394
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "superior_vena_cava",
+      "label": "Superior vena cava",
+      "explanation": "Large vein entering the top of the right atrium, returning deoxygenated blood from the upper body.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#65b9ec",
+      "opacity": 1,
+      "sourceBox": [
+        0.333,
+        0.09,
+        0.437,
+        0.36
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "inferior_vena_cava",
+      "label": "Inferior vena cava",
+      "explanation": "Large vein entering the lower part of the right atrium, returning deoxygenated blood from the lower body.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#65b9ec",
+      "opacity": 1,
+      "sourceBox": [
+        0.32899999999999996,
+        0.734,
+        0.397,
+        0.9099999999999999
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "pulmonary_veins",
+      "label": "Pulmonary veins",
+      "explanation": "Small veins entering the left atrium, bringing oxygenated blood back from the lungs to begin the systemic part of the cycle.",
+      "shape": "ellipsoid",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": "#ee806d",
+      "opacity": 1,
+      "sourceBox": [
+        0.6299999999999999,
+        0.37,
+        0.746,
+        0.494
+      ],
+      "motion": {
+        "type": "none",
+        "axis": "y",
+        "speed": 0,
+        "amplitude": 0,
+        "center": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "links": [],
+  "controls": [
+    {
+      "id": "animation_pace",
+      "label": "Explanation pace",
+      "unit": "\u00d7",
+      "target": "right_atrium",
+      "property": "speed",
+      "min": 0.5,
+      "max": 2,
+      "value": 1,
+      "step": 0.1,
+      "explanation": "Speeds up or slows down the whole teaching sequence. It does not simulate a physiological rate or physical outcome."
+    }
+  ],
+  "questions": [
+    "Why is the left ventricular wall thicker?",
+    "What keeps blood from flowing backward?",
+    "Why do the two ventricles contract together?"
+  ],
+  "cutaway": {
+    "regions": [
+      {
+        "id": "right_atrium",
+        "label": "Right atrium",
+        "center": [
+          0.386,
+          0.518
+        ],
+        "radius": [
+          0.068,
+          0.118
+        ],
+        "labelSide": "left",
+        "color": "#65b9ec"
+      },
+      {
+        "id": "right_ventricle",
+        "label": "Right ventricle",
+        "center": [
+          0.445,
+          0.735
+        ],
+        "radius": [
+          0.105,
+          0.105
+        ],
+        "labelSide": "left",
+        "color": "#65b9ec"
+      },
+      {
+        "id": "left_atrium",
+        "label": "Left atrium",
+        "center": [
+          0.598,
+          0.462
+        ],
+        "radius": [
+          0.066,
+          0.082
+        ],
+        "labelSide": "right",
+        "color": "#ee806d"
+      },
+      {
+        "id": "left_ventricle",
+        "label": "Left ventricle",
+        "center": [
+          0.61,
+          0.69
+        ],
+        "radius": [
+          0.082,
+          0.14
+        ],
+        "labelSide": "right",
+        "color": "#ee806d"
+      },
+      {
+        "id": "heart_valves",
+        "label": "Heart valves",
+        "center": [
+          0.505,
+          0.6
+        ],
+        "radius": [
+          0.115,
+          0.065
+        ],
+        "labelSide": "right",
+        "color": "#ee806d"
+      },
+      {
+        "id": "aorta",
+        "label": "Aorta",
+        "center": [
+          0.512,
+          0.225
+        ],
+        "radius": [
+          0.088,
+          0.115
+        ],
+        "labelSide": "right",
+        "color": "#ee806d"
+      },
+      {
+        "id": "pulmonary_artery",
+        "label": "Pulmonary artery",
+        "center": [
+          0.605,
+          0.332
+        ],
+        "radius": [
+          0.135,
+          0.062
+        ],
+        "labelSide": "right",
+        "color": "#65b9ec"
+      },
+      {
+        "id": "superior_vena_cava",
+        "label": "Superior vena cava",
+        "center": [
+          0.385,
+          0.225
+        ],
+        "radius": [
+          0.052,
+          0.135
+        ],
+        "labelSide": "left",
+        "color": "#65b9ec"
+      },
+      {
+        "id": "inferior_vena_cava",
+        "label": "Inferior vena cava",
+        "center": [
+          0.363,
+          0.822
+        ],
+        "radius": [
+          0.034,
+          0.088
+        ],
+        "labelSide": "left",
+        "color": "#65b9ec"
+      },
+      {
+        "id": "pulmonary_veins",
+        "label": "Pulmonary veins",
+        "center": [
+          0.688,
+          0.432
+        ],
+        "radius": [
+          0.058,
+          0.062
+        ],
+        "labelSide": "right",
+        "color": "#ee806d"
+      }
+    ],
+    "flows": [
+      {
+        "id": "venous_return_to_right_heart",
+        "label": "Venous return to right heart",
+        "points": [
+          [
+            0.385,
+            0.1
+          ],
+          [
+            0.385,
+            0.24
+          ],
+          [
+            0.388,
+            0.38
+          ],
+          [
+            0.39,
+            0.5
+          ],
+          [
+            0.405,
+            0.62
+          ],
+          [
+            0.44,
+            0.73
+          ]
+        ],
+        "color": "#65b9ec"
+      },
+      {
+        "id": "inferior_venous_return",
+        "label": "Inferior vena cava return",
+        "points": [
+          [
+            0.363,
+            0.9
+          ],
+          [
+            0.362,
+            0.81
+          ],
+          [
+            0.358,
+            0.71
+          ],
+          [
+            0.372,
+            0.61
+          ],
+          [
+            0.388,
+            0.54
+          ]
+        ],
+        "color": "#65b9ec"
+      },
+      {
+        "id": "pulmonary_veins_to_left_heart",
+        "label": "Pulmonary veins to left heart",
+        "points": [
+          [
+            0.735,
+            0.44
+          ],
+          [
+            0.69,
+            0.445
+          ],
+          [
+            0.64,
+            0.46
+          ],
+          [
+            0.605,
+            0.5
+          ],
+          [
+            0.598,
+            0.58
+          ],
+          [
+            0.605,
+            0.68
+          ],
+          [
+            0.615,
+            0.77
+          ]
+        ],
+        "color": "#ee806d"
+      },
+      {
+        "id": "right_ventricle_to_pulmonary_artery",
+        "label": "Right ventricle to pulmonary artery",
+        "points": [
+          [
+            0.47,
+            0.72
+          ],
+          [
+            0.485,
+            0.6
+          ],
+          [
+            0.495,
+            0.49
+          ],
+          [
+            0.525,
+            0.41
+          ],
+          [
+            0.585,
+            0.355
+          ],
+          [
+            0.66,
+            0.315
+          ],
+          [
+            0.735,
+            0.295
+          ]
+        ],
+        "color": "#65b9ec"
+      },
+      {
+        "id": "left_ventricle_to_aorta",
+        "label": "Left ventricle to aorta",
+        "points": [
+          [
+            0.61,
+            0.74
+          ],
+          [
+            0.585,
+            0.62
+          ],
+          [
+            0.53,
+            0.47
+          ],
+          [
+            0.472,
+            0.38
+          ],
+          [
+            0.465,
+            0.28
+          ],
+          [
+            0.495,
+            0.195
+          ],
+          [
+            0.54,
+            0.14
+          ],
+          [
+            0.545,
+            0.095
+          ]
+        ],
+        "color": "#ee806d"
+      }
+    ],
+    "phases": [
+      {
+        "id": "filling_and_relaxation",
+        "title": "Filling and relaxation",
+        "explanation": "Both ventricles relax together and the atrioventricular valves are open. Deoxygenated blood enters the right atrium and right ventricle from the venae cavae, while oxygenated blood enters the left atrium and left ventricle from the pulmonary veins.",
+        "duration": 1.0,
+        "highlights": [
+          "right_atrium",
+          "right_ventricle",
+          "left_atrium",
+          "left_ventricle"
+        ],
+        "flows": [
+          "venous_return_to_right_heart",
+          "inferior_venous_return",
+          "pulmonary_veins_to_left_heart"
+        ],
+        "contractions": [
+          {
+            "regionId": "right_ventricle",
+            "strength": 0.01
+          },
+          {
+            "regionId": "left_ventricle",
+            "strength": 0.01
+          }
+        ],
+        "movingParts": [
+          "right_ventricle",
+          "left_ventricle",
+          "heart_valves"
+        ]
+      },
+      {
+        "id": "atrial_contraction",
+        "title": "Atrial contraction",
+        "explanation": "Both atria contract at the same time, topping up both ventricles. The right side continues toward the lung circuit and the left side toward the body circuit, but the atria act as one coordinated pump.",
+        "duration": 0.8,
+        "highlights": [
+          "right_atrium",
+          "left_atrium",
+          "heart_valves"
+        ],
+        "flows": [
+          "venous_return_to_right_heart",
+          "pulmonary_veins_to_left_heart"
+        ],
+        "contractions": [
+          {
+            "regionId": "right_atrium",
+            "strength": -0.02
+          },
+          {
+            "regionId": "left_atrium",
+            "strength": -0.02
+          }
+        ],
+        "movingParts": [
+          "right_atrium",
+          "left_atrium",
+          "heart_valves"
+        ]
+      },
+      {
+        "id": "ventricular_ejection",
+        "title": "Ventricular ejection",
+        "explanation": "Both ventricles contract together. The atrioventricular valves close to limit backflow and the outlet valves open: the right ventricle ejects deoxygenated blood into the pulmonary artery, while the thicker-walled left ventricle ejects oxygenated blood into the aorta.",
+        "duration": 1.0,
+        "highlights": [
+          "right_ventricle",
+          "left_ventricle",
+          "pulmonary_artery",
+          "aorta"
+        ],
+        "flows": [
+          "right_ventricle_to_pulmonary_artery",
+          "left_ventricle_to_aorta"
+        ],
+        "contractions": [
+          {
+            "regionId": "right_ventricle",
+            "strength": -0.025
+          },
+          {
+            "regionId": "left_ventricle",
+            "strength": -0.025
+          }
+        ],
+        "movingParts": [
+          "right_ventricle",
+          "left_ventricle",
+          "heart_valves"
+        ]
+      },
+      {
+        "id": "reset_and_refill",
+        "title": "Reset and refill",
+        "explanation": "The ventricles relax, the outlet valves close, and the chambers begin to refill. The continuous loop is body to right heart, pulmonary artery to lungs, pulmonary veins to left heart, then aorta back to the body.",
+        "duration": 0.8,
+        "highlights": [
+          "heart_valves",
+          "aorta",
+          "pulmonary_artery"
+        ],
+        "flows": [],
+        "contractions": [
+          {
+            "regionId": "right_ventricle",
+            "strength": 0.01
+          },
+          {
+            "regionId": "left_ventricle",
+            "strength": 0.01
+          }
+        ],
+        "movingParts": [
+          "right_ventricle",
+          "left_ventricle",
+          "heart_valves"
+        ]
+      }
+    ],
+    "limitations": [
+      "This is a slowed teaching cycle, not clinical timing, pressure, volume, or valve-motion measurement; one phase is not one complete heartbeat.",
+      "The finished cutaway partly hides the aortic outlet behind the pulmonary trunk and the inferior vena cava behind the right ventricle, so those short connecting segments are mapped less confidently than the visible chambers.",
+      "Lungs and the wider body circulation are not drawn; flow stops at the pulmonary branches, pulmonary veins, venae cavae, and aorta rather than showing gas exchange or systemic return.",
+      "Blue and red follow the conventional oxygen-poor and oxygen-rich teaching scheme shown in the artwork, not a direct oxygen measurement.",
+      "Valve leaflets are grouped as one region because the individual tricuspid, mitral, pulmonary, and aortic leaflets are small and partly overlapping in this view."
+    ],
+    "image": "/illustrations/heart-cutaway.webp",
+    "provenance": "muse-image-1.0",
+    "poses": [
+      {
+        "phaseId": "filling_and_relaxation",
+        "image": "/illustrations/heart-cutaway.webp"
+      },
+      {
+        "phaseId": "atrial_contraction",
+        "image": "/illustrations/heart-atrial.webp"
+      },
+      {
+        "phaseId": "ventricular_ejection",
+        "image": "/illustrations/heart-ejection.webp"
+      },
+      {
+        "phaseId": "reset_and_refill",
+        "image": "/illustrations/heart-refill.webp"
+      }
+    ]
+  }
+}

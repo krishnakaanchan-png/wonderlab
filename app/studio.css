@@ -1,0 +1,920 @@
+.studio-shell {
+  --muted: #52645b;
+  max-width: none;
+  background: #f0f3ef;
+}
+.studio-shell .topbar {
+  height: 64px;
+  padding: 0 24px;
+  gap: 20px;
+}
+.studio-shell .wordmark {
+  font-size: 24px;
+  letter-spacing: -0.7px;
+}
+.studio-shell .beta {
+  background: none;
+  padding: 0;
+  margin-left: 10px;
+  border-left: 1px solid #cdd7ce;
+  padding-left: 13px;
+  font-size: 13px;
+}
+.studio-shell .top-actions {
+  gap: 10px;
+  margin-left: auto;
+}
+.studio-shell .topline {
+  font-size: 13px;
+  text-align: left;
+  color: #718177;
+  margin-left: 20px;
+}
+.studio-shell .agent-link,
+.studio-shell .open-project-button,
+.studio-shell .focus-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  padding: 9px 10px;
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.studio-shell .agent-link:hover,
+.studio-shell .open-project-button:hover,
+.studio-shell .focus-button:hover {
+  background: #e3eae2;
+}
+.studio-shell .focus-button[aria-pressed="true"] {
+  background: #dce8dc;
+  color: #234f37;
+}
+.studio-shell .meta-status {
+  font-size: 11px;
+  white-space: nowrap;
+  padding: 0 8px;
+}
+.studio-shell .export-button {
+  border: 0;
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 9px 10px;
+}
+.studio-shell .workspace {
+  grid-template-columns: 240px minmax(0, 1fr) 288px;
+  gap: 12px;
+  margin: 0 16px 16px;
+  min-height: 0;
+}
+.studio-shell .source-panel {
+  padding: 16px 4px 0 0;
+  min-height: 0;
+  overflow: auto;
+}
+.studio-shell .panel-heading {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.studio-shell .upload-area {
+  border-color: #d9e2d9;
+  background: #fff;
+  border-radius: 10px;
+}
+.studio-shell .source-image {
+  margin: 14px auto 6px;
+  max-width: 170px;
+  max-height: 200px;
+  overflow: hidden;
+}
+.studio-shell .source-image img {
+  max-height: 200px;
+  object-fit: contain;
+}
+.studio-shell .image-caption {
+  font-size: 11px;
+  padding: 2px 12px 8px;
+}
+.studio-shell .upload-link {
+  font-size: 13px;
+  padding: 11px;
+  background: #fafcf9;
+}
+.studio-shell .brief-label {
+  font-size: 13px;
+  margin-top: 20px;
+}
+.studio-shell .brief {
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 72px;
+  height: 72px;
+  background: #fafcf9;
+}
+.studio-shell .output-mode-label {
+  font-size: 12px;
+  margin-top: 14px;
+}
+.studio-shell .output-mode {
+  font-size: 13px;
+  min-height: 40px;
+  background: #fff;
+}
+.studio-shell .generate-button {
+  min-height: 44px;
+  font-size: 13px;
+  margin-top: 12px;
+  background: #234b39;
+}
+.studio-shell .input-note {
+  font-size: 11px;
+  line-height: 1.6;
+  padding: 0 2px;
+}
+.studio-shell .example-library {
+  margin-top: 24px;
+  border-top: 1px solid #dce4db;
+  padding-top: 15px;
+}
+.studio-shell .example-library > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  min-height: 32px;
+}
+.studio-shell .example-library > summary > span:first-child {
+  flex: 1;
+}
+.studio-shell .example-library > summary > span:nth-child(2) {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--muted);
+}
+.studio-shell .example-library[open] > summary > svg {
+  transform: rotate(180deg);
+}
+.studio-shell .example-list {
+  margin-top: 12px;
+}
+.studio-shell .example-row {
+  padding: 10px 8px;
+}
+.studio-shell .example-row strong {
+  font-size: 12px;
+}
+.studio-shell .example-row img {
+  width: 44px;
+  height: 42px;
+}
+.studio-shell .source-foot {
+  font-size: 11px;
+  padding: 26px 4px 18px;
+}
+.studio-shell .project-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  background: #e3eee0;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+.studio-shell .experiment-panel {
+  border-radius: 12px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: none;
+}
+.studio-shell .experiment-heading {
+  padding: 17px 20px 15px;
+  min-height: 76px;
+  flex-shrink: 0;
+}
+.studio-shell .breadcrumb {
+  display: none;
+}
+.studio-shell .experiment-heading h1 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  line-height: 1.25;
+  max-width: 36ch;
+}
+.studio-shell .mode-tag {
+  font-size: 11px;
+  background: #f2f5f0;
+  border: 0;
+  flex-shrink: 0;
+}
+.studio-shell .scene-stage {
+  margin: 0 12px;
+  border-radius: 9px;
+  min-height: 280px;
+}
+.studio-shell .cutaway-stage {
+  min-height: 320px;
+}
+.studio-shell .scene-caption {
+  font-size: 11px;
+}
+.studio-shell .cutaway-phase-caption {
+  display: none;
+}
+.studio-shell .view-tools {
+  top: 12px;
+  right: 12px;
+}
+.studio-shell .view-tools button {
+  padding: 8px;
+}
+.studio-shell .playback {
+  height: 54px;
+  flex-shrink: 0;
+  padding: 0 20px;
+  font-size: 12px;
+  border: 0;
+}
+.studio-shell .play-button {
+  width: 34px;
+  height: 34px;
+  background: #e6eee4;
+}
+.studio-shell .playback select {
+  font-size: 12px;
+  min-height: 30px;
+  min-width: 60px;
+}
+.studio-shell .sequence-bar {
+  padding: 3px 20px 15px;
+  flex-shrink: 0;
+}
+.studio-shell .sequence-heading {
+  font-size: 12px;
+}
+.studio-shell .sequence-bar > input {
+  margin: 9px 0;
+  height: 14px;
+}
+.studio-shell .sequence-phases button {
+  font-size: 11px;
+  padding-top: 7px;
+  min-height: 30px;
+}
+.studio-shell .understand {
+  padding: 15px 20px;
+  flex-shrink: 0;
+}
+.studio-shell .understand p {
+  font-size: 13px;
+  line-height: 1.65;
+  max-height: 6.6em;
+  overflow: auto;
+}
+.studio-shell .understand.quick-questions {
+  padding: 12px 20px;
+}
+.studio-shell .quick-questions .understand-title,
+.studio-shell .quick-questions > p {
+  display: none;
+}
+.studio-shell .quick-questions .question-chips {
+  margin: 0;
+}
+.studio-shell .question-chips button {
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 9px 11px;
+  background: #f1f5ef;
+}
+.studio-shell .assumptions {
+  margin: 0;
+  padding: 11px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  flex-shrink: 0;
+  max-height: 170px;
+  overflow: auto;
+}
+.studio-shell .assumptions summary {
+  font-size: 11px;
+}
+.studio-shell .inspector-panel {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  min-height: 0;
+  background: #fff;
+}
+.studio-shell .inspector-tabs {
+  height: 54px;
+  gap: 25px;
+  padding: 0 20px;
+}
+.studio-shell .inspector-tabs button {
+  font-size: 13px;
+}
+.studio-shell .inspector-scroll {
+  padding: 20px;
+  max-height: none;
+  min-height: 0;
+  flex: 1;
+  overflow: auto;
+}
+.studio-shell .inspector-intro h2 {
+  font-size: 16px;
+  letter-spacing: -0.2px;
+}
+.studio-shell .inspector-intro p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+.studio-shell .phase-explainer {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f2f6ef;
+  border-radius: 7px;
+  min-height: 160px;
+  max-height: 200px;
+  overflow: auto;
+}
+.studio-shell .phase-explainer h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.studio-shell .phase-explainer p {
+  font-size: 13px;
+  line-height: 1.65;
+  color: #53675a;
+}
+.studio-shell .story-steps {
+  margin-top: 12px;
+  gap: 2px;
+}
+.studio-shell .story-steps button {
+  min-height: 42px;
+  padding: 10px 8px;
+  align-items: center;
+}
+.studio-shell .story-dot {
+  margin: 0;
+  width: 6px;
+  height: 6px;
+}
+.studio-shell .story-steps button > span:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 1;
+}
+.studio-shell .story-steps strong {
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 400;
+}
+.studio-shell .story-steps small {
+  font-size: 11px;
+  white-space: nowrap;
+  line-height: 1;
+}
+.studio-shell .story-steps button.active {
+  background: #edf3e9;
+}
+.studio-shell .story-steps button.active strong {
+  font-weight: 500;
+}
+.studio-shell .controls {
+  margin-top: 25px;
+}
+.studio-shell .control {
+  margin-bottom: 22px;
+}
+.studio-shell .control label {
+  font-size: 13px;
+}
+.studio-shell .control p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.studio-shell .components-header h2 {
+  font-size: 13px;
+}
+.studio-shell .components-list button {
+  min-height: 38px;
+  font-size: 13px;
+}
+.studio-shell .chat-panel {
+  max-height: none;
+  min-height: 0;
+  flex: 1;
+}
+.studio-shell .chat-history {
+  padding: 22px 18px;
+}
+.studio-shell .chat-intro h2 {
+  font-size: 23px;
+}
+.studio-shell .chat-intro p,
+.studio-shell .message {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.studio-shell .chat-form textarea {
+  font-size: 13px;
+}
+.studio-shell .chat-suggestions button {
+  font-size: 13px;
+  padding: 13px;
+}
+.studio-shell .send-button {
+  width: 32px;
+  height: 32px;
+}
+.studio-shell input,
+.studio-shell textarea {
+  caret-color: #256b5e;
+}
+.studio-shell ::selection {
+  background: #cce4ce;
+  color: #183d2b;
+}
+.studio-shell * {
+  scrollbar-width: thin;
+  scrollbar-color: #c7d3c8 transparent;
+}
+@media (min-width: 1101px) {
+  .studio-shell {
+    height: 100dvh;
+    overflow: hidden;
+  }
+  .studio-shell .workspace {
+    height: calc(100dvh - 80px);
+    grid-template-rows: minmax(0, 1fr);
+  }
+  .studio-shell .scene-stage {
+    flex: 1;
+    height: auto;
+  }
+  .studio-shell.is-focused .workspace {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+  }
+  .studio-shell.is-focused .source-panel,
+  .studio-shell.is-focused .inspector-panel {
+    display: none;
+  }
+  .studio-shell.is-focused .scene-stage {
+    min-height: 360px;
+  }
+  .studio-shell.is-focused .experiment-heading h1 {
+    max-width: none;
+  }
+}
+@media (min-width: 1101px) and (max-height: 780px) {
+  .studio-shell .experiment-panel {
+    overflow: auto;
+  }
+  .studio-shell .scene-stage {
+    height: 330px;
+    flex: none;
+  }
+  .studio-shell .quick-questions {
+    display: none;
+  }
+  .studio-shell .mode-tag {
+    display: none;
+  }
+}
+@media (max-width: 1250px) {
+  .studio-shell .workspace {
+    grid-template-columns: 215px minmax(0, 1fr) 255px;
+    gap: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .studio-shell .topline,
+  .studio-shell .meta-status {
+    display: none;
+  }
+  .studio-shell .experiment-heading h1 {
+    font-size: 20px;
+  }
+  .studio-shell .inspector-scroll {
+    padding: 16px;
+  }
+  .studio-shell .phase-explainer {
+    padding: 12px;
+  }
+  .studio-shell .mode-tag {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .studio-shell .workspace {
+    grid-template-columns: 210px minmax(0, 1fr);
+    height: auto;
+  }
+  .studio-shell .source-panel {
+    grid-row: 1/3;
+  }
+  .studio-shell .inspector-panel {
+    grid-column: 2;
+    border: 1px solid var(--border);
+    margin-top: 0;
+  }
+  .studio-shell .scene-stage {
+    height: 440px;
+  }
+  .studio-shell .focus-button {
+    display: none;
+  }
+  .studio-shell .inspector-scroll {
+    display: block;
+  }
+  .studio-shell .guide-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .studio-shell .phase-explainer {
+    min-height: 160px;
+  }
+  .studio-shell .story-steps {
+    margin-top: 20px;
+  }
+  .studio-shell .chat-panel {
+    height: 550px;
+  }
+  .studio-shell .controls {
+    margin-top: 20px;
+  }
+  .studio-shell .phase-explainer p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 640px) {
+  .studio-shell .topbar {
+    height: 62px;
+    padding: 0 16px;
+    gap: 8px;
+  }
+  .studio-shell .wordmark {
+    font-size: 22px;
+  }
+  .studio-shell .beta,
+  .studio-shell .agent-link,
+  .studio-shell .top-actions button > span {
+    display: none;
+  }
+  .studio-shell .top-actions {
+    gap: 4px;
+  }
+  .studio-shell .top-actions button {
+    min-width: 36px;
+    min-height: 36px;
+    padding: 8px;
+  }
+  .studio-shell .mobile-tabs {
+    height: 46px;
+    padding: 0 18px;
+    gap: 25px;
+  }
+  .studio-shell .mobile-tabs button {
+    font-size: 13px;
+  }
+  .studio-shell .workspace {
+    display: block;
+    margin: 0 8px 8px;
+  }
+  .studio-shell .source-panel {
+    display: none;
+    padding: 20px 16px;
+  }
+  .studio-shell .source-panel.mobile-active {
+    display: flex;
+  }
+  .studio-shell .experiment-panel {
+    display: none;
+  }
+  .studio-shell .experiment-panel.mobile-active {
+    display: flex;
+  }
+  .studio-shell .inspector-panel {
+    display: none;
+  }
+  .studio-shell .inspector-panel.mobile-active {
+    display: flex;
+  }
+  .studio-shell .scene-stage {
+    height: 340px;
+    margin: 0 8px;
+    min-height: 300px;
+  }
+  .studio-shell .experiment-heading {
+    padding: 17px 15px;
+    min-height: 72px;
+  }
+  .studio-shell .experiment-heading h1 {
+    font-size: 21px;
+    line-height: 1.25;
+  }
+  .studio-shell .playback {
+    padding: 0 15px;
+    font-size: 12px;
+  }
+  .studio-shell .sequence-bar {
+    padding: 3px 15px 14px;
+  }
+  .studio-shell .sequence-phases button {
+    font-size: 11px;
+  }
+  .studio-shell .understand,
+  .studio-shell .understand.quick-questions {
+    padding: 14px 15px;
+  }
+  .studio-shell .quick-questions .question-chips {
+    gap: 7px;
+  }
+  .studio-shell .question-chips button {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .studio-shell .assumptions {
+    padding: 12px 15px;
+  }
+  .studio-shell .assumptions summary {
+    font-size: 12px;
+  }
+  .studio-shell .inspector-scroll {
+    padding: 20px;
+  }
+  .studio-shell .guide-content {
+    display: block;
+  }
+  .studio-shell .phase-explainer {
+    min-height: 0;
+    max-height: none;
+    padding: 16px;
+  }
+  .studio-shell .phase-explainer p {
+    font-size: 14px;
+  }
+  .studio-shell .story-steps button {
+    min-height: 48px;
+  }
+  .studio-shell .story-steps strong {
+    font-size: 14px;
+  }
+  .studio-shell .control label,
+  .studio-shell .brief-label,
+  .studio-shell .upload-link,
+  .studio-shell .brief,
+  .studio-shell .output-mode {
+    font-size: 14px;
+  }
+  .studio-shell .source-image {
+    max-width: 230px;
+    max-height: 250px;
+  }
+  .studio-shell .source-image img {
+    max-height: 250px;
+  }
+  .studio-shell .components-list button {
+    font-size: 14px;
+    min-height: 44px;
+  }
+  .studio-shell .chat-panel {
+    height: calc(100dvh - 177px);
+  }
+  .studio-shell .message,
+  .studio-shell .chat-form textarea {
+    font-size: 14px;
+  }
+  .studio-shell .source-foot {
+    padding-top: 26px;
+  }
+  .studio-shell .open-project-button {
+    display: flex;
+  }
+}
+.integration-page {
+  max-width: 1120px;
+  margin: auto;
+  padding: 28px 36px 80px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #253d32;
+}
+.integration-page header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #5a6d60;
+  margin-bottom: 65px;
+}
+.integration-page header a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.integration-intro {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 70px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.integration-intro h1 {
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+  font-weight: 500;
+  max-width: 21ch;
+  margin-bottom: 22px;
+}
+.integration-intro p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #5b6c60;
+  max-width: 44ch;
+}
+.integration-intro .primary {
+  display: inline-flex;
+  margin-top: 25px;
+  font-size: 14px;
+}
+.workflow-preview {
+  padding: 32px;
+  background: #e2eade;
+  border-radius: 12px;
+}
+.workflow-preview > svg {
+  color: #326b4d;
+  margin-bottom: 20px;
+}
+.workflow-preview ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.workflow-preview li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.workflow-preview strong {
+  font-size: 18px;
+  font-weight: 500;
+}
+.workflow-preview span {
+  font-size: 13px;
+  color: #5c715e;
+}
+.integration-section {
+  padding: 35px 0;
+  border-top: 1px solid #d8e1d6;
+  scroll-margin-top: 30px;
+}
+.integration-section h2 {
+  font-size: 25px;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-bottom: 15px;
+}
+.integration-section > p {
+  max-width: 76ch;
+  color: #53675a;
+  margin: 12px 0;
+}
+.connection-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 27px;
+}
+.connection-options article {
+  background: white;
+  padding: 25px;
+  border-radius: 9px;
+}
+.connection-options h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+.connection-options p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #53675a;
+}
+.integration-page code {
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.88em;
+  overflow-wrap: anywhere;
+}
+.integration-page pre {
+  padding: 18px;
+  background: #edf2eb;
+  border-radius: 5px;
+  font-size: 14px;
+  overflow: auto;
+  line-height: 1.7;
+  margin: 20px 0;
+}
+.tool-table {
+  margin-top: 25px;
+}
+.tool-table > div {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  padding: 17px 0;
+  border-bottom: 1px solid #e0e7dd;
+  gap: 20px;
+}
+.tool-table code {
+  font-size: 13px;
+  font-weight: 500;
+}
+.tool-table p {
+  font-size: 14px;
+  color: #53675a;
+}
+.integration-section .integration-note {
+  font-size: 13px;
+  line-height: 1.8;
+  background: #e5ecdf;
+  padding: 18px;
+  border-radius: 6px;
+}
+@media (max-width: 700px) {
+  .integration-page {
+    padding: 20px;
+  }
+  .integration-page header {
+    margin-bottom: 40px;
+    gap: 15px;
+  }
+  .integration-intro {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 35px;
+  }
+  .integration-intro h1 {
+    font-size: 33px;
+    max-width: 20ch;
+  }
+  .integration-intro p {
+    font-size: 16px;
+  }
+  .connection-options {
+    grid-template-columns: 1fr;
+  }
+  .tool-table > div {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .integration-section {
+    padding: 30px 0;
+  }
+  .workflow-preview {
+    padding: 25px;
+  }
+}
+
+.studio-shell .source-image {
+  width: fit-content;
+}
+.studio-shell .source-image img {
+  width: auto;
+  max-width: 170px;
+}
+@media (max-width: 640px) {
+  .studio-shell .source-image img {
+    max-width: 230px;
+  }
+}
+@media(max-width:640px){.studio-shell .view-tools button{min-width:44px;min-height:44px;padding:10px}.studio-shell .scene-caption{max-width:115px}}
+.studio-shell .topline{color:var(--muted)}
+@media(min-width:641px) and (max-width:1250px){.studio-shell .workspace{margin-left:16px;margin-right:16px}}
